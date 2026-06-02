@@ -17,13 +17,14 @@ function App() {
     setSummary('');
 
     try {
-      const response = await axios.post(`${import.meta.env.VITE_API_URL}`, {
+      const apiUrl = import.meta.env.VITE_API_URL || '/api/summarize';
+      const response = await axios.post(apiUrl, {
         videoUrl: videoUrl
       });
 
-      setSummary(response.data.summary)
+      setSummary(response.data.summary);
     } catch (err) {
-      setError('Could not connect to the backend server.', err);
+      setError('Could not connect to the backend server.');
     } finally {
       setLoading(false);
     }
