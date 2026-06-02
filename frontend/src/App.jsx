@@ -17,7 +17,7 @@ function App() {
     setSummary('');
 
     try {
-      const response = await axios.post('/api/summarize', {
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}`, {
         videoUrl: videoUrl
       });
 
