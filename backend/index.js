@@ -8,13 +8,7 @@ dotenv.config();
 
 const app = express();
 app.use(
-    cors({
-        origin: [
-            "http://localhost:5173",
-            "https://ai-video-summarizer-liart.vercel.app/"
-        ],
-        credentials: true
-    })
+    cors()
 );
 app.use(express.json());
 
