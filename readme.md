@@ -4,7 +4,7 @@ A simple full-stack app that converts YouTube video transcripts into concise AI-
 
 The frontend is built with React and Vite, and the backend uses Express with the Google Gemini AI SDK and a free YouTube transcript extractor.
 
-<img width="1366" height="615" alt="Image" src="https://github.com/user-attachments/assets/154b4990-f64d-49a8-9382-82b836f2d063" />
+<img width="1232" height="615" alt="Image" src="https://github.com/user-attachments/assets/b2476e3a-ee41-4d41-9bc8-c57be98f02e3" />
 
 ---
 
